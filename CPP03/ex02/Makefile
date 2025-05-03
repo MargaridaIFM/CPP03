@@ -1,15 +1,15 @@
-NAME = ClapTrap
+NAME = FragTrap
 
 CC = c++
 CFLAGS = -std=c++98 -Wall -Wextra -Werror -g
 
-SRC = main.cpp ClapTrap.cpp ScavTrap
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "Creating  ScavTrap Progam..."
+	@echo "Creating  FragTrap Progam..."
 	@$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 %.o: %.cpp
